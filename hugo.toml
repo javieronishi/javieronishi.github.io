@@ -1,0 +1,38 @@
+baseURL = 'https://javieronishi.github.io/'
+languageCode = 'es-bo'
+title = 'Javier Onishi | InfoSec & Dev'
+theme = 'PaperMod'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+# Configuración de los Menús Superiores
+[menu]
+  [[menu.main]]
+    name = "Pentesting"
+    url = "/categories/pentesting/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Desarrollo Web"
+    url = "/categories/desarrollo-web/"
+    weight = 20
+
+  [[menu.main]]
+    name = "Linux & Lab"
+    url = "/categories/linux/"
+    weight = 30
+
+  [[menu.main]]
+    name = "Sobre mí"
+    url = "/about/"
+    weight = 40
+
+# Ajustes específicos para el tema PaperMod
+[params]
+  env = "production"
+  title = "Javier Onishi"
+  description = "Bitácora sobre Hacking Ético, Pentesting y Desarrollo Web"
+  defaultTheme = "dark" # Hace que el blog sea oscuro por defecto (estilo hacker)
+  ShowCodeCopyButtons = true # Añade un botón para copiar los comandos de la terminal
