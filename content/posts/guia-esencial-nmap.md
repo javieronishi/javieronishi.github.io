@@ -4,6 +4,9 @@ date: 2026-06-16
 draft: false
 categories: ["Pentesting"]
 tags: ["nmap", "recon", "networking", "herramientas"]
+cover:
+  image: "/images/guia-esencial-nmap.jpg"
+  alt: "Guía esencial de Nmap para Pentesting"
 ---
 
 El reconocimiento es la fase más crítica de cualquier auditoría de seguridad. No puedes atacar lo que no sabes que existe. En esta guía rápida cubriremos los comandos esenciales de **Nmap** para moverte eficientemente en tus laboratorios y exámenes (como el eJPTv2).
@@ -40,10 +43,10 @@ nmap -p- --min-rate 5000 10.10.10.X
 
 ## 4. Guia Rápida de Parámetros
 
-| Parámetro | ¿Qué hace? | ¿Cuándo usarlo? |
-|-----------|-----------|-----------------|
-| -p- | Escanea todos los puertos | Al final, para no dejar nada fuera. |
-| -Pn | Omite el ping inicial | Cuando el host bloquea paquetes ICMP. |
-| -oN | Guarda el output en texto plano | Siempre, para documentar tu reporte. |
+| Parámetro | ¿Qué hace?                      | ¿Cuándo usarlo?                       |
+| --------- | ------------------------------- | ------------------------------------- |
+| -p-       | Escanea todos los puertos       | Al final, para no dejar nada fuera.   |
+| -Pn       | Omite el ping inicial           | Cuando el host bloquea paquetes ICMP. |
+| -oN       | Guarda el output en texto plano | Siempre, para documentar tu reporte.  |
 
 `Tip`: Acostúmbrate siempre a guardar tus escaneos agregando -oN mi_escaneo.txt. En el mundo profesional, si no documentas tu output, tu trabajo no existe.
